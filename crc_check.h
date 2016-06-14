@@ -1,5 +1,5 @@
-#ifndef _verify_crc_h_
-#define _verify_crc_h_
+#ifndef _crc_check_h_
+#define _crc_check_h_
 #include <stdint.h>
 #include <Arduino.h>
 
