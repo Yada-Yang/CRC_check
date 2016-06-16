@@ -1,5 +1,5 @@
-#ifndef _crc_check_h_
-#define _crc_check_h_
+#ifndef _CRC_CHECK_H_
+#define _CRC_CHECK_H_
 #include <stdint.h>
 
 extern       uint8_t  CRC8_INIT;
