@@ -2,6 +2,10 @@
 #define _crc_check_h_
 #include <stdint.h>
 
+extern       uint8_t  CRC8_INIT;
+extern const uint8_t  CRC8_TAB[256];
+extern       uint16_t CRC16_INIT;
+extern const uint16_t CRC16_TAB[256];
 
 uint8_t      Get_CRC8_Check_Sum(uint8_t *message, uint32_t length, uint8_t CRC8);
 uint32_t  Verify_CRC8_Check_Sum(uint8_t *message, uint32_t length);
