@@ -44,7 +44,7 @@ uint8_t  Get_CRC8_Check_Sum(uint8_t  *message, uint32_t length, uint8_t CRC8)
 ** Input: Data to Verify,Stream length = Data + checksum
 ** Output: True or False (CRC Verify Result)
 */
-uint32_t Verify_CRC8_Check_Sum(uint8_t *message, uint32_t length)
+bool Verify_CRC8_Check_Sum(uint8_t *message, uint32_t length)
 {
 	uint8_t expected = 0;
 	if ((message == NULL) || (length <= 2)) return 0;
@@ -128,7 +128,7 @@ uint16_t Get_CRC16_Check_Sum(uint8_t *message,uint32_t length,uint16_t CRC16)
 ** Input: Data to Verify,Stream length = Data + checksum
 ** Output: True or False (CRC Verify Result)
 */
-uint32_t Verify_CRC16_Check_Sum(uint8_t *message, uint32_t length)
+bool Verify_CRC16_Check_Sum(uint8_t *message, uint32_t length)
 {
 	uint16_t expected = 0;
 	if ((message == NULL) || (length <= 2))
